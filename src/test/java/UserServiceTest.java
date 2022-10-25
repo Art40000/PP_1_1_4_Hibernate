@@ -3,7 +3,6 @@ import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.List;
 
 public class UserServiceTest {
@@ -25,7 +24,7 @@ public class UserServiceTest {
     }
 
     @Test
-    public void createUsersTble() {
+    public void createUsersTable() {
         try {
             userService.dropUsersTable();
             userService.createUsersTable();

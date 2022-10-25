@@ -1,12 +1,12 @@
 package jm.task.core.jdbc.util;
-
 import org.hibernate.SessionFactory;
+
 import org.hibernate.cfg.Configuration;
 
 public class Util {
-    private static final SessionFactory sessionFactory = buildSessionFactory();
+    private static final SessionFactory sessionFactory = BuildSessionFactory();
 
-    private static SessionFactory buildSessionFactory() {
+    private static SessionFactory BuildSessionFactory() {
         try {
             return new Configuration().configure().buildSessionFactory();
         }
